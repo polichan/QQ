@@ -1,11 +1,11 @@
-# WeChat SDK for Go
+# QQ SDK for Go
 ![Go](https://github.com/polichan/qq/workflows/Go/badge.svg?branch=release-2.0)
 [![Go Report Card](https://goreportcard.com/badge/github.com/silenceper/wechat)](https://goreportcard.com/report/github.com/silenceper/wechat)
 [![pkg](https://img.shields.io/badge/dev-reference-007d9c?logo=go&logoColor=white&style=flat)](https://pkg.go.dev/github.com/polichan/qq?tab=doc)
 ![version](https://img.shields.io/badge/version-v2-green)
 
-使用Golang开发的微信SDK，简单、易用。
->注意：当前版本为v2版本，v1版本已废弃
+使用Golang开发的QQSDK，简单、易用。
+基于[wechat](https://github.com/silenceper/wechat)的原有基础上编写的 QQ SDK
 
 
 ## 文档 && 例子
