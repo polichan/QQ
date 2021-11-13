@@ -5,11 +5,12 @@
 ![version](https://img.shields.io/badge/version-v2-green)
 
 使用Golang开发的QQSDK，简单、易用。
-基于[wechat](https://github.com/silenceper/wechat)的原有基础上编写的 QQ SDK
+
+基于 [原作者 silenceper/wechat ](https://github.com/silenceper/wechat) 的原有基础上编写的 QQ SDK
 
 
 ## 文档 && 例子
-[API列表](https://github.com/polichan/qq/tree/v2/doc/api)
+[API列表](https://github.com/polichan/qq/doc/api)
 
 [Wechat SDK 2.0 文档](https://silenceper.com/wechat)
 
