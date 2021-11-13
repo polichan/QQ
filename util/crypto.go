@@ -15,7 +15,7 @@ import (
 	"strings"
 )
 
-// 微信签名算法方式
+// QQ签名算法方式
 const (
 	SignTypeMD5        = `MD5`
 	SignTypeHMACSHA256 = `HMAC-SHA256`

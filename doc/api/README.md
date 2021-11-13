@@ -9,10 +9,10 @@
 | 获取公众号类目       | GET      | /wxaapi/newtmpl/getcategory            | NO         |   |silenceper| 2021-12-20|
 
 
-- [微信公众号](./officialaccount.md)
+- [QQ公众号](./officialaccount.md)
 - [小程序](./miniprogram.md)
 - [小游戏](./minigame.md)
 - [开放平台](./oplatform.md)
-- [微信支付](./wxpay.md)
-- [企业微信](./work.md)
+- [QQ支付](./wxpay.md)
+- [企业QQ](./work.md)
 - [智能对话](./aispeech.md)

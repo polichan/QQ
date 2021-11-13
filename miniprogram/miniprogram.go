@@ -9,7 +9,7 @@ import (
 	"github.com/polichan/qq/miniprogram/qrcode"
 )
 
-// MiniProgram 微信小程序相关API
+// MiniProgram QQ小程序相关API
 type MiniProgram struct {
 	ctx *context.Context
 }

@@ -11,7 +11,7 @@ import (
 )
 
 // getTicketURL 获取ticket的url
-const getTicketURL = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=%s&type=jsapi"
+const getTicketURL = "https://api.q.qq.com/cgi-bin/ticket/getticket?access_token=%s&type=jsapi"
 
 // DefaultJsTicket 默认获取js ticket方法
 type DefaultJsTicket struct {
@@ -51,7 +51,7 @@ func (js *DefaultJsTicket) GetTicket(accessToken string) (ticketStr string, err 
 	js.jsAPITicketLock.Lock()
 	defer js.jsAPITicketLock.Unlock()
 
-	// 双检，防止重复从微信服务器获取
+	// 双检，防止重复从QQ服务器获取
 	if val := js.cache.Get(jsAPITicketCacheKey); val != nil {
 		return val.(string), nil
 	}

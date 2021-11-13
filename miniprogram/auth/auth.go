@@ -10,9 +10,9 @@ import (
 )
 
 const (
-	code2SessionURL = "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code"
+	code2SessionURL = "https://api.q.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code"
 
-	checkEncryptedDataURL = "https://api.weixin.qq.com/wxa/business/checkencryptedmsg?access_token=%s"
+	checkEncryptedDataURL = "https://api.q.qq.com/wxa/business/checkencryptedmsg?access_token=%s"
 )
 
 // Auth 登录/用户信息
@@ -68,12 +68,12 @@ func (auth *Auth) GetPaidUnionID() {
 	// TODO
 }
 
-// CheckEncryptedData .检查加密信息是否由微信生成（当前只支持手机号加密数据），只能检测最近3天生成的加密数据
+// CheckEncryptedData .检查加密信息是否由QQ生成（当前只支持手机号加密数据），只能检测最近3天生成的加密数据
 func (auth *Auth) CheckEncryptedData(encryptedMsgHash string) (result RspCheckEncryptedData, err error) {
 	return auth.CheckEncryptedDataContext(context2.Background(), encryptedMsgHash)
 }
 
-// CheckEncryptedDataContext .检查加密信息是否由微信生成（当前只支持手机号加密数据），只能检测最近3天生成的加密数据
+// CheckEncryptedDataContext .检查加密信息是否由QQ生成（当前只支持手机号加密数据），只能检测最近3天生成的加密数据
 func (auth *Auth) CheckEncryptedDataContext(ctx context2.Context, encryptedMsgHash string) (result RspCheckEncryptedData, err error) {
 	var response []byte
 	var (

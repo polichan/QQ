@@ -22,7 +22,7 @@
 import "github.com/polichan/qq"
 ```
 
-以下是一个微信公众号处理消息接收以及回复的例子：
+以下是一个QQ公众号处理消息接收以及回复的例子：
 
 ```go
 //使用memcache保存access_token，也可选择redis或自定义cache
